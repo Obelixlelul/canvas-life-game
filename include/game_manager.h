@@ -76,14 +76,15 @@ class GameManager
 
         }
 
-
+        // Generate hashkey
         void hashFunction()
         {
-           std::hash< std::string> hasher;
+           std::hash< std::string > hasher;
 
            cfg.hashKey = hasher(generateString( cfg.firstMan.coordinates ) );
         }
 
+        // Add gen and linking with generated hashkey
         void addTo_HashTable()
         {
             hashTable[cfg.hashKey] = cfg.genNumber;
@@ -105,7 +106,6 @@ class GameManager
 
                 cfg.assign( arguments ); // passing all data from options.
 
-                system("mkdir ../output");
             }
             else
             {
@@ -128,7 +128,7 @@ class GameManager
 
                 //Stream to write name for encode_png
                 std::ostringstream temp_name;
-                temp_name << "../output/";
+                temp_name << "../"+cfg.firstMan.imgdirpath+"/";
                 temp_name << cfg.firstMan.outfile2;
                 temp_name << std::to_string(cfg.genNumber).c_str();
                 temp_name << ".png";

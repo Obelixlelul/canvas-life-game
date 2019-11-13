@@ -1,6 +1,6 @@
 # Conway's Life Game Simulator
 ## About the project
-`Life` implementation in `C++` using class and game loop pattern.
+`Cellular Automata` implementation in `C++` using class and game loop pattern.
 
 The game is a zero-player game, the evolution is determined by a pattern. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
 ## Rules
@@ -15,7 +15,7 @@ Every cell interacts with its eight neighbours, which are the cells that are hor
 ## Compile
 Clone the repository
 ```bash
-$ git clone https://github.com/Obelixlelul/canvas-life-game.git
+$ git clone https://github.com/OnofreTZK/Conways-LifeGame
 ```
 
 In root
@@ -28,9 +28,9 @@ $ make
 
 Default running:
 ```bash
-$ ./glife <initial_config_file.data>
+$ ./glife <initial_config_file.dat>
 ````
-check `data/` to see all config files.
+Check directory `data/` to see all config files.
 
 Options running:
 ```bash
@@ -38,9 +38,9 @@ $ ./glife --help
 ````
 To see extra running options
 
-### Authorship
-* Tiago Onofre
-* Rafael Fortunato
+## Authorship
+* [Tiago Onofre](https://github.com/OnofreTZK)
+* [Rafael Fortunato](https://github.com/Obelixlelul)
 
 
 
